@@ -27,7 +27,11 @@ export default function page() {
         <div className="border-4 border-black rounded-[15px] h-16 flex items-center justify-center px-4">
           <div className="flex justify-center space-x-4">
             {socialMediaLinks.map((socialMedia) => (
-              <Link key={socialMedia.url} href={socialMedia.url}>
+              <Link
+                key={socialMedia.url}
+                href={socialMedia.url}
+                target="_blank"
+              >
                 <Image
                   src={socialMedia.imageSrc}
                   alt={socialMedia.alt}
